@@ -21,7 +21,14 @@ app.use(express.json());
 app.use(express.static('public'));
 
 let websiteMonitor = new WebsiteMonitor(config.websites || []);
-let azureFileMonitor = new AzureFileMonitor(config.azureFileStorages || []);
+  // Update SAS URL from environment variable for security
+  if (process.env.AZURE_SAS_URL && config.azureFileStorages.length > 0) {
+    config.azureFileStorages[0].sasUrl = process.env.AZURE_SAS_URL;
+  }
+
+  let azureFileMonitor = new AzureFileMonitor(config.azureFileStorages ||
+  []);
+  5. Com
 
 let monitoringResults = {
   websites: {},
