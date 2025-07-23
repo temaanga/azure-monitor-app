@@ -1,20 +1,11 @@
 {
     "name": "azure-monitor-app",
     "version": "1.0.0",
-    "description": "Lightweight application to monitor websites and Azure 
-  file storage",
+    "description": "Azure monitoring app",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js",
-      "dev": "node server.js"
+      "start": "node server.js"
     },
-    "keywords": [
-      "monitoring",
-      "azure",
-      "website",
-      "health-check"
-    ],
-    "author": "",
     "license": "MIT",
     "dependencies": {
       "@azure/storage-file-share": "^12.17.0",
@@ -27,6 +18,6 @@
       "node-cron": "^3.0.3"
     },
     "engines": {
-      "node": ">=18.0.0"
+      "node": "18.x"
     }
   }
