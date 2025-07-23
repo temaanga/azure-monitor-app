@@ -1,0 +1,27 @@
+{
+    "websites": [
+      {
+        "name": "Stuff.co.nz",
+        "url": "https://www.stuff.co.nz"
+      },
+      {
+        "name": "Google",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Reddit",
+        "url": "http://www.reddit.com"
+      }
+    ],
+    "azureFileStorages": [
+      {
+        "name": "MiseEnSyncStorage",
+        "shareName": "testcontainer",
+        "sasUrl": "PLACEHOLDER_SAS_URL_SET_IN_AZURE_PORTAL",
+        "directories": [
+          "toplevel/error",
+          "toplevel/pending"
+        ]
+      }
+    ]
+  }
